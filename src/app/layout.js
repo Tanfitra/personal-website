@@ -10,6 +10,11 @@ const poppins = Poppins({
 export const metadata = {
   title: "Adhim Tanfitra | Personal Website",
   description: "A personal portfolio showcasing Tanfitra projects, skills, and experience.",
+  keywords: ['Personal Website', 'Adhim Tanfitra', 'Portfolio', 'Frontend Developer'],
+  authors: [{ name: 'Adhim Tanfitra' }],
+  other: {
+    "google-site-verification": "zkQ2ODSmcXqDck1efOZ3H04i59TQpemy-zpn_C_LbtM"
+  }
 };
 
 export default function RootLayout({ children }) {
