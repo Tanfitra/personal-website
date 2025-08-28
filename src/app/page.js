@@ -34,7 +34,7 @@ export default function Home() {
             style={{ backgroundImage: "url('/assets/image/bg.jpg')" }}
         >
             <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center lg:items-start lg:pl-20 p-4'>
-                <TrueFocus />
+                <h1><TrueFocus /></h1>
 
                 <div className='flex items-center mt-4 font-medium'>
                     <p className='font-medium text-2xl'>Hi, Folks</p>

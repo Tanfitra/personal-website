@@ -22,7 +22,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className='bg-[#03252e] text-[#dee2e6] px-4 md:px-20 py-6 flex items-center justify-between'>
+        <nav className='bg-[#03252e] text-[#dee2e6] px-4 md:px-20 py-6 flex items-center justify-between relative z-50'>
             <h1 className='text-3xl font-extrabold tracking-tight'>Adhim Tanfitra</h1>
             
             {/* Hamburger Icon for Mobile */}
