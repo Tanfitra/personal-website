@@ -125,16 +125,14 @@ export default function Education() {
     ];
 
     return (
-            <section className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
+            <section className="min-h-screen">
                 <Navbar />
                 
-                {/* Education Section */}
                 <div className="text-white flex justify-center py-8">
                     <div className="w-full max-w-6xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
                         <SectionTitle title="EDUCATION" />
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-                            {/* Education Card 1 */}
                             <div className="bg-[#03252e] rounded-xl shadow-lg overflow-hidden text-white transform transition-transform duration-300 hover:scale-[1.02]">
                                 <div className="relative w-full h-48">
                                     <Image

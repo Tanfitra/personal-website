@@ -64,7 +64,7 @@ export default function ExperiencePage() {
     };
 
     return (
-        <section className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
+        <section className="min-h-screen">
             <Navbar />
             <div className="text-white flex justify-center py-4 sm:py-6 md:py-8">
                 <div className="w-full max-w-6xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
