@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const poppins = Poppins({
     variable: "--font-poppins",
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
                 className={`${poppins.variable} antialiased bg-[#01161b] text-[#fff]`}
             >
                 {children}
+                <Analytics />
             </body>
         </html>
     );
