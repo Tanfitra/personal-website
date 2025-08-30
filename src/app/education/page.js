@@ -4,7 +4,6 @@ import SectionTitle from "../__components__/SectionTitle";
 import CertificateCard from "../__components__/CertificateCard";
 import CertificateModal from "../__components__/CertificateModal";
 import Image from "next/image";
-import Head from "next/head";
 import { useState } from "react";
 
 export default function Education() {
@@ -126,14 +125,6 @@ export default function Education() {
     ];
 
     return (
-        <>
-            <Head>
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
-                <title>Education | Adhim Tanfitra</title>
-            </Head>
             <section className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
                 <Navbar />
                 
@@ -200,6 +191,5 @@ export default function Education() {
                     certificates={certificates}
                 />
             </section>
-        </>
     );
 }
