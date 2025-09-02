@@ -1,8 +1,8 @@
 "use client";
 import Navbar from "../__components__/Navbar";
-import SectionTitle from "../__components__/SectionTitle";
+import SectionTitle from "../__components__/ui/SectionTitle";
 import { useState } from "react";
-import { ExperienceCard } from "../__components__/ExperienceCard";
+import { ExperienceCard } from "../__components__/ui/ExperienceCard";
 
 const experiences = [
     {

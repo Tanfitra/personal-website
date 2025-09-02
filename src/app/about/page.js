@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Navbar from "../__components__/Navbar";
-import SectionTitle from "../__components__/SectionTitle";
-import SkillCard from "../__components__/SkillCard";
+import SectionTitle from "../__components__/ui/SectionTitle";
+import SkillCard from "../__components__/ui/SkillCard";
 import { FaPhp, FaHtml5, FaGithub } from "react-icons/fa";
 import {
     SiJavascript,
@@ -48,8 +48,8 @@ export default function About() {
     return (
         <section className="min-h-screen">
             <Navbar />
-            <div className="text-white flex items-center justify-center">
-                <div className="w-full max-w-6xl px-4 py-6 sm:px-6 md:px-8 lg:px-12">
+            <div className="text-white flex justify-center py-8">
+                <div className="w-full max-w-6xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
                     <SectionTitle title="ABOUT" />
 
                     <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12">

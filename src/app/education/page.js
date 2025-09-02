@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import Navbar from "../__components__/Navbar";
-import SectionTitle from "../__components__/SectionTitle";
-import CertificateCard from "../__components__/CertificateCard";
-import CertificateModal from "../__components__/CertificateModal";
+import SectionTitle from "../__components__/ui/SectionTitle";
+import CertificateCard from "../__components__/ui/CertificateCard";
+import CertificateModal from "../__components__/ui/CertificateModal";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -125,69 +125,70 @@ export default function Education() {
     ];
 
     return (
-            <section className="min-h-screen">
-                <Navbar />
-                
-                <div className="text-white flex justify-center py-8">
-                    <div className="w-full max-w-6xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
-                        <SectionTitle title="EDUCATION" />
+        <section className="min-h-screen">
+            <Navbar />
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-                            <div className="bg-[#03252e] rounded-xl shadow-lg overflow-hidden text-white transform transition-transform duration-300 hover:scale-[1.02]">
-                                <div className="relative w-full h-48">
-                                    <Image
-                                        src="/assets/image/amikom-purwokerto.png"
-                                        alt="Universitas Amikom Purwokerto"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#03252e] to-transparent opacity-90"></div>
-                                </div>
+            <div className="text-white flex justify-center py-8">
+                <div className="w-full max-w-6xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
+                    <SectionTitle title="EDUCATION" />
 
-                                <div className="p-5">
-                                    <h3 className="text-lg font-semibold mb-1">
-                                        Universitas Amikom Purwokerto
-                                    </h3>
-                                    <p className="text-sm text-gray-300 mb-3">
-                                        Sep 2021 – Sep 2025
-                                    </p>
-                                    <p className="italic text-sm mt-2 text-blue-200">
-                                        Bachelor's Degree in Computer Science – S.Kom.
-                                    </p>
-                                    <div className="flex items-center mt-4">
-                                        <span className="bg-[#01161b] text-blue-200 text-xs font-medium px-2.5 py-0.5 rounded">
-                                            GPA: 3.53/4.00
-                                        </span>
-                                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                        <div className="bg-[#03252e] rounded-xl shadow-lg overflow-hidden text-white transform transition-transform duration-300 hover:scale-[1.02]">
+                            <div className="relative w-full h-48">
+                                <Image
+                                    src="/assets/image/amikom-purwokerto.png"
+                                    alt="Universitas Amikom Purwokerto"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#03252e] to-transparent opacity-90"></div>
+                            </div>
+
+                            <div className="p-5">
+                                <h3 className="text-lg font-semibold mb-1">
+                                    Universitas Amikom Purwokerto
+                                </h3>
+                                <p className="text-sm text-gray-300 mb-3">
+                                    Sep 2021 – Sep 2025
+                                </p>
+                                <p className="italic text-sm mt-2 text-blue-200">
+                                    Bachelor's Degree in Computer Science –
+                                    S.Kom.
+                                </p>
+                                <div className="flex items-center mt-4">
+                                    <span className="bg-[#01161b] text-blue-200 text-xs font-medium px-2.5 py-0.5 rounded">
+                                        GPA: 3.53/4.00
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                {/* Certifications Section */}
-                <div className="text-white flex justify-center pb-12">
-                    <div className="w-full max-w-6xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
-                        <SectionTitle title="CERTIFICATIONS" />
-                        
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-                            {certificates.map((cert, index) => (
-                                <CertificateCard
-                                    key={cert.id}
-                                    cert={cert}
-                                    onZoom={() => setSelectedIndex(index)}
-                                />
-                            ))}
-                        </div>
+            </div>
+
+            {/* Certifications Section */}
+            <div className="text-white flex justify-center pb-12">
+                <div className="w-full max-w-6xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
+                    <SectionTitle title="CERTIFICATIONS" />
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                        {certificates.map((cert, index) => (
+                            <CertificateCard
+                                key={cert.id}
+                                cert={cert}
+                                onZoom={() => setSelectedIndex(index)}
+                            />
+                        ))}
                     </div>
                 </div>
+            </div>
 
-                {/* Modal */}
-                <CertificateModal
-                    selectedIndex={selectedIndex}
-                    setSelectedIndex={setSelectedIndex}
-                    certificates={certificates}
-                />
-            </section>
+            {/* Modal */}
+            <CertificateModal
+                selectedIndex={selectedIndex}
+                setSelectedIndex={setSelectedIndex}
+                certificates={certificates}
+            />
+        </section>
     );
 }

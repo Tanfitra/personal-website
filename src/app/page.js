@@ -100,7 +100,7 @@ export default function Home() {
 
                 {/* Social Icons */}
                 <div className='flex space-x-4 mt-6 text-gray-400'>
-                    <Link href='https://sptfy.com/tanfitra' target='_blank'>
+                    <Link href='https://open.spotify.com/user/adhim_t?si=4433c91a7164478c' target='_blank'>
                         <FaSpotify className='text-xl hover:text-[#1DB954] cursor-pointer' />
                     </Link>
                     <Link href='https://x.com/adhim_t' target='_blank'>
