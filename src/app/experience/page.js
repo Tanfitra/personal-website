@@ -21,6 +21,20 @@ const experiences = [
         ],
     },
     {
+        jobTitle: "Social Media Manager",
+        company: "Revitalize Community",
+        project:
+            "A SA:MP server project focused on strengthening community visibility through creative social media campaigns, leveraging TikTok (@revitalizeid) as a promotional platform to boost engagement and brand awareness.",
+        period: "Oct 2024 – Jan 2025",
+        type: "Part-time",
+        responsibilities: [
+            "Designed and executed promotional content strategies for TikTok (@revitalizeid).",
+            "Created engaging video campaigns to increase brand awareness and attract community members.",
+            "Monitored and analyzed content performance metrics to improve reach and engagement.",
+            "Collaborated with team members to ensure alignment between social media campaigns and community goals.",
+        ],
+    },
+    {
         jobTitle: "React & Back End Developer || SIB Dicoding Cycle 6",
         company: "Dicoding Academy",
         project:
@@ -49,6 +63,21 @@ const experiences = [
             "Served as Front-End Developer, responsible for designing and implementing the user interface and integrating APIs.",
             "Developed features enabling users to share, search, and discover healthy recipes with detailed nutritional information.",
             "Utilized React, Tailwind CSS, and Axios for the front-end, integrated with Express.js and MySQL for backend and database management.",
+        ],
+    },
+    {
+        jobTitle: "Supervisor & HRD",
+        company: "Revitalize Community",
+        project:
+            "A SA:MP server project focused on building a secure, engaging gaming community through effective recruitment, training, and management strategies, prioritizing player satisfaction and staff development.",
+        period: "Sep 2021 – May 2023",
+        type: "Part-time",
+        responsibilities: [
+            "Supervised team members’ training routines and activities, monitoring individual progress and ensuring alignment with established goals.",
+            "Fostered effective communication channels among team members to optimize collaboration and maintain high performance standards.",
+            "Oversaw recruitment and onboarding processes to ensure the selection of competent staff.",
+            "Implemented staff management strategies, including performance evaluations and development plans, to improve efficiency and staff satisfaction.",
+            "Facilitated continuous professional development through structured training and feedback, ensuring adherence to community standards and project policies.",
         ],
     },
 ];
