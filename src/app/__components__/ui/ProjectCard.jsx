@@ -82,7 +82,7 @@ export default function ProjectCard({
         </div>
         
         {/* Title */}
-        <h2 className="text-center text-lg sm:text-xl font-bold text-white py-3 px-2 bg-[#021921] backdrop-blur-sm truncate">
+        <h2 className="text-center text-lg sm:text-xl font-bold text-white py-3 px-2 bg-[#03252e] backdrop-blur-sm truncate">
           {title}
         </h2>
 
@@ -119,7 +119,7 @@ export default function ProjectCard({
         </div>
 
         {/* Quick Info Footer */}
-        <div className="p-3 bg-[#021921] border-t border-[#054354]">
+        <div className="p-3 bg-[#03252e] border-t border-[#054354]">
           <div className="flex justify-between items-center text-xs text-[#7ab6c5]">
             <span>{projectDate || 'Jun 2020 - Jul 2020'}</span>
             <div className="flex gap-2">
