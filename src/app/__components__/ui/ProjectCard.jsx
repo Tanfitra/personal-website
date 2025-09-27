@@ -12,6 +12,7 @@ import {
 
 } from "react-icons/fa";
 import { FaLaravel } from "react-icons/fa6";
+import { TbBrandCSharp } from "react-icons/tb";
 import { 
   SiReact, 
   SiNodedotjs, 
@@ -19,7 +20,14 @@ import {
   SiMongodb, 
   SiMysql,
   SiTailwindcss,
-  SiAxios
+  SiAxios,
+  SiRedux,
+  SiStorybook,
+  SiVitest,
+  SiCypress,
+  SiNextdotjs,
+  SiDaisyui,
+  SiSqlite
 } from "react-icons/si";
 
 export default function ProjectCard({ 
@@ -57,11 +65,18 @@ export default function ProjectCard({
     if (techLower.includes('react') || techLower.includes('react')) return <SiReact className="text-blue-400" />;
     if (techLower.includes('node') || techLower.includes('node.js')) return <SiNodedotjs className="text-green-500" />;
     if (techLower.includes('express')) return <SiExpress className="text-gray-300" />;
-    if (techLower.includes('mongo')) return <SiMongodb className="text-green-600" />;
     if (techLower.includes('laravel')) return <FaLaravel className="text-red-500" />;
     if (techLower.includes('mysql')) return <SiMysql className="text-blue-500" />;
     if (techLower.includes('tailwind')) return <SiTailwindcss className="text-cyan-400" />;
     if (techLower.includes('axios')) return <SiAxios className="text-gray-500" />;
+    if (techLower.includes('redux')) return <SiRedux className="text-purple-500" />;
+    if (techLower.includes('storybook')) return <SiStorybook className="text-rose-500" />;
+    if (techLower.includes('vitest')) return <SiVitest className="text-green-500" />;
+    if (techLower.includes('cypress')) return <SiCypress className="text-yellow-500" />;
+    if (techLower.includes('next.js')) return <SiNextdotjs className="text-black" />;
+    if (techLower.includes('daisyui')) return <SiDaisyui className="text-pink-500" />;
+    if (techLower.includes('sqlite')) return <SiSqlite className="text-blue-500" />;
+    if (techLower.includes('csharp')) return <TbBrandCSharp className="text-blue-500" />;
     return null;
   };
 
@@ -73,7 +88,7 @@ export default function ProjectCard({
           <span className={`px-2 py-1 rounded-full text-xs font-semibold ${
             category === 'WEB' 
               ? 'bg-green-500 text-white' 
-              : category === 'ANDROID'
+              : category === 'DESKTOP'
               ? 'bg-orange-500 text-white'
               : 'bg-blue-500 text-white'
           }`}>
