@@ -25,12 +25,12 @@ export const metadata = {
     openGraph: {
         title: "Adhim Tanfitra | Personal Website",
         description:
-            "A personal portfolio showcasing Tanfitra projects, skills, and experience.",
+            "A personal portfolio showcasing Adhim Tanfitra projects, skills, and experience.",
         url: "https://tanfitra.vercel.app/",
         siteName: "Adhim Tanfitra",
         images: [
             {
-                url: "https://cdn.discordapp.com/attachments/1005377975732142221/1410485967394963467/IMG-20240407-WA0008-1.jpg",
+                url: "https://cdn.discordapp.com/attachments/1005377975732142221/1445956069007294588/adhim-tanfitra.jpg",
                 width: 800,
                 height: 600,
                 alt: "Adhim Tanfitra",
