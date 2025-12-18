@@ -122,7 +122,7 @@ export default function Home() {
 
                 {/* Footer */}
                 <div className='absolute bottom-10 left-4 lg:left-20 text-gray-400 text-center lg:text-left'>
-                    <p>© 2025 All rights reserved. test</p>
+                    <p>© 2025 All rights reserved.</p>
                 </div>
             </div>
         </div>
